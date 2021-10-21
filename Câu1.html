@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài1: cho trước một mảng n phần tử.-->
+<!--Viết hàm đếm in ra số lượng các số chẵn trong mảng-->
+<script>
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let dem = 0;
+    function soChan(array) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                dem++;
+            }
+        }
+        document.write('số chẵn có trong mảng là:' + dem + 'số' )
+    }
+    soChan();
+</script>
+</body>
+</html>

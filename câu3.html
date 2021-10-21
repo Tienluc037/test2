@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài3: cho trước một mảng bao gồm n phần tử-->
+<!--Viết hàm tính tổng các số nguyên tố tong mảng.-->
+<script>
+    let arr = [1, 2, 3, 4, 5, 7, 9, 10, 6, 11, 19];
+    let tong = 0;
+    function sum (snt) {
+        for (let i = 0; i < arr.length; i++) {
+            let dem = 0;
+            for (let j = 0; j <= arr[i]; j++) {
+                if (arr[i] > 1) {
+                    if (arr[i] % j === 0) {
+                        dem++;
+                    }
+                }
+            }
+            if (dem === 2) {
+                document.write(arr[i] + '<br>');
+                tong += arr[i];
+            }
+        }
+        document.write('tổng các số nguyên tố trong mảng bằng: ' + tong)
+    }
+    sum();
+</script>
+</body>
+</html>

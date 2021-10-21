@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài2: cho trước một mảng n phần tử.-->
+<!--Viết hàm cho phép đếm xem có bao nhiêu phần tử a (a được nhập từ bàn phím)-->
+<script>
+    let arr = new Array(5)
+    let dem = 0;
+    function kiemTra(array) {
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = prompt('Nhập phần tử:')
+            if (arr[i] === 'a') {
+                dem++;
+            }
+        }
+        document.write('số phần tử a có trong mảng là:' + dem + 'phần tử')
+    }
+    kiemTra();
+</script>
+</body>
+</html>
